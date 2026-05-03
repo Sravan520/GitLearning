@@ -61,6 +61,7 @@ public class SubmitOrderStepDef extends BaseTest {
 	public void validate_confirmation(String message)
 	{
 		String confirmMessage=confirmpgage.getConfirmMeassage();
+		System.out.println("Expected confim  " +message);
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase(message));
 		driver.close();
 	}
