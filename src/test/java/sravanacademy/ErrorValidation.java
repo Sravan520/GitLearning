@@ -57,5 +57,20 @@ public class ErrorValidation extends BaseTest{
 		Assert.assertFalse(match);
 	}
 	
+	@Test
+	public void productCatelogueError3() throws Exception {
+		
+		String BuyingItem="ZARA COAT 3";
+		String cvv="513";
+		String country="India";
+		ProductCatelogue prodCatelogue=login.loginApplication("sravank@gmail.com", "Kumar@520");
+		
+		List<WebElement> productslist=prodCatelogue.getProductslist();
+		prodCatelogue.AddtoCart(BuyingItem);
+		CheckOutPage checkout=prodCatelogue.gotoCart();
+		
+		Boolean match=checkout.Checkoutorder("ZARA COAT 73");
+		Assert.assertFalse(match);
+	}
 	
 }
