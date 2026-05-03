@@ -1,0 +1,8 @@
+pageObjects\LoginPage.class
+pageObjects\PlaceOrderPage.class
+pageObjects\ProductCatelogue.class
+pageObjects\CheckOutPage.class
+pageObjects\ConfirmPage.class
+AbstractComponents\AbstractComponents.class
+Resources\ExtentReportsTestNg.class
+pageObjects\OrderPage.class
