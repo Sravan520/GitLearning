@@ -62,6 +62,7 @@ public class SubmitOrderStepDef extends BaseTest {
 	{
 		String confirmMessage=confirmpgage.getConfirmMeassage();
 		System.out.println("Expected confim message  " + message);
+		System.out.println("Sravan Update New");
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase(message));
 		driver.close();
 	}
